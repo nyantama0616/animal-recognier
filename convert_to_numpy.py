@@ -16,7 +16,7 @@ X = [] #画像データ
 Y = [] #ラベルデータ
 
 for index, class_ in enumerate(classes):
-    photos_dir = './img/train/' + class_ + "/"
+    photos_dir = './img/train/' + class_ + "/" #事前に、./img/train/horseっみたいなフォルダ作る必要あり
 
     #jpg形式の画像データを取得
     files = glob.glob(photos_dir + '*.jpg')

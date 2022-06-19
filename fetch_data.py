@@ -13,7 +13,7 @@ secret = "8bd77f5a93928163"
 wait_time = 1
 
 def get_photos(animal_name):
-    savedir = "./img/" + animal_name  + "/"
+    savedir = "./img/train/" + animal_name  + "/"
 
     flickr = FlickrAPI(key, secret, format="parsed-json")
     result = flickr.photos.search(
